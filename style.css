@@ -1,42 +1,49 @@
 body {
   font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  display: flex;
-  justify-content: center;
-  padding-top: 50px;
-}
-
-.app {
-  background: white;
+  background: #f2f2f2;
   padding: 20px;
-  width: 300px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.input-group {
-  display: flex;
-  gap: 5px;
+h1 {
+  text-align: center;
 }
 
-input {
-  flex: 1;
-  padding: 5px;
+.table-wrapper {
+  overflow-x: auto;
 }
 
-button {
-  padding: 5px 10px;
-  cursor: pointer;
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  background: white;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 15px;
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
 }
 
-li {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 5px;
+th {
+  background: #222;
+  color: white;
 }
+
+th input,
+.player-input {
+  width: 100%;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+select {
+  width: 100%;
+  padding: 4px;
+}
+
+/* Color-coded scores */
+.score-1 { background: #f44336; color: white; }
+.score-2 { background: #ff9800; color: white; }
+.score-3 { background: #e0e0e0; }
+.score-4 { background: #8bc34a; }
+.score-5 { background: #4caf50; color: white; }

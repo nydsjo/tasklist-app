@@ -2,21 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>My Task List</title>
+  <title>AoS 6x6 Pairings Matrix</title>
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
 </head>
 <body>
+  <h1>Age of Sigmar – 6v6 Pairings Matrix</h1>
 
-  <div class="app">
-    <h1>📝 Task List</h1>
+  <table>
+    <thead>
+      <tr>
+        <!-- Top-left corner -->
+        <th>Player ↓ / Opp →</th>
 
-    <div class="input-group">
-      <input type="text" id="taskInput" placeholder="Enter a task..." />
-      <button onclick="addTask()">Add</button>
-    </div>
+        <!-- Opponent columns -->
+        <th><input placeholder="Opp 1" /></th>
+        <th><input placeholder="Opp 2" /></th>
+        <th><input placeholder="Opp 3" /></th>
+        <th><input placeholder="Opp 4" /></th>
+        <th><input placeholder="Opp 5" /></th>
+        <th><input placeholder="Opp 6" /></th>
+      </tr>
+    </thead>
 
-    <ul id="taskList"></ul>
-  </div>
+    <!-- JS will generate EXACTLY 6 player rows here -->
+    <tbody id="matrix-body"></tbody>
+  </table>
 
   <script src="script.js"></script>
 </body>
